@@ -31,7 +31,9 @@ ________________________________________________________________________________
 Winning conditions are summerized below:
 
 2 diagnoal
-3 vertical --->     These are all possible winning conditions. Winning conditions will be checked index-wise. Index-wise player generate a list and if the sorted list 3 horizontal        matches one of winning conditions then game will end so does the loop (gamestatus = False).
+3 vertical --> Uniquely
+3 horizontal
+These are all possible winning conditions. Winning conditions will be checked index-wise. Index-wise player generate a list and if the sorted list matches one of winning conditions then game will end so does the loop (gamestatus = False).
 
 
 There may be a draw. In that case, all possible location list will be empty list and hence draw will occur.
