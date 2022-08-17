@@ -52,9 +52,10 @@ print("\n")
 while gameStatus != False: # Total game loop happens here
     userInput = int(input("Enter location: "))
    
-    while userInput not in possible_locations:
-        print("possible locations are:", *possible_locations)
-        userInput = int(input("Enter a possible location: "))
+    while userInput not in possible_locations or userInput.isdigit() == False:
+            print("possible locations are:", *possible_locations)
+            userInput = int(input("Enter a possible location: "))
+     userInput = int(userInput)
     
     possible_locations.remove(userInput)
     gameBoard[userInput - 1] = "X"
